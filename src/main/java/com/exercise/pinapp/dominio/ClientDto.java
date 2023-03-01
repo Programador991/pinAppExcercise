@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ClientDto extends ClientRequest {
+    @JsonProperty("Fecha de muerte")
     private String fechaMuerte;
 
     public ClientDto(String nombre, String apellido, Integer edad,

@@ -8,8 +8,12 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class ClientRequest {
+    @JsonProperty("Nombre")
     private String nombre;
+    @JsonProperty("Apellido")
     private String apellido;
+    @JsonProperty("Edad")
     private Integer edad;
+    @JsonProperty("Fecha de nacimiento")
     private String fechaNacimiento;
 }

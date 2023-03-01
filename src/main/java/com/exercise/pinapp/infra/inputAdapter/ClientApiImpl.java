@@ -26,7 +26,6 @@ public class ClientApiImpl implements ClientApi {
     @PostMapping("/creacliente")
     @Override
     public void createClient(ClientRequest clientRequest) {
-        // TODO validacion de clientRequest
         clientInputPort.createClient(clientRequest);
     }
 
